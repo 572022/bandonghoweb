@@ -1,0 +1,544 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    
+     :root {
+        --main_color: black;
+        --color-menu: #fff;
+    }
+    
+    #thongbao {
+        color: rgba(116, 114, 114, 0.753);
+        cursor: pointer;
+    }
+    
+    #logo {
+        display: flex;
+    }
+    
+    #logo-left {
+        width: 24%;
+        height: 100px;
+        padding-left: 10px;
+    }
+    
+    #logo-left img {
+        width: 100%;
+        height: 100px;
+    }
+    
+    #search {
+        width: 85%;
+        height: 100px;
+        display: flex;
+    }
+    
+    .timkiem {
+        line-height: 100px;
+        width: 60%;
+        margin: 0px auto;
+    }
+    
+    .timkiem input {
+        padding: 10px;
+        width: 400px;
+        border-radius: 30px;
+    }
+    
+    .timkiem-right {
+        margin-right: 30px;
+    }
+    
+    .timkiem-right table {
+        text-align: center;
+    }
+    
+    .timkiem-right td a,
+    .timkiem-right td .fa {
+        color: rgba(116, 114, 114, 0.753);
+        padding: 10px;
+        text-decoration: none;
+    }
+    /* menu */
+    
+    #menu {
+        width: 100%;
+        height: 36px;
+        position: sticky;
+        top: -1px;
+        background-color: var(--main_color);
+        z-index: 1000;
+    }
+    
+    #menu>ul {
+        display: flex;
+        color: #fff;
+        height: 36px;
+    }
+    
+    #menu ul li {
+        list-style: none;
+        padding: 10px;
+        position: relative;
+        background-color: black;
+        border: 1px solid rgb(48, 47, 47);
+        font-size: 15px;
+    }
+    
+    #menu li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #menu ul.cl_menu1>li:nth-child(1) {
+        background-color: red;
+    }
+    
+    ul.menu2 {
+        position: absolute;
+        width: 130px;
+        background-color: var(--main-color);
+        top: 35px;
+        left: 0px;
+        display: none;
+    }
+    
+    ul.menu2 li {
+        border: 1px solid rgb(48, 47, 47);
+    }
+    
+    #menu ul li:hover ul.menu2 {
+        display: block;
+    }
+    
+    #menu li:hover {
+        background-color: rgb(34, 35, 36);
+    }
+    /* product */
+    
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #eeecec;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+    
+    .product-body {
+        margin: 30px 0 20px 0;
+        width: 90%;
+        height: 650px;
+        background: white;
+        display: flex;
+        justify-content: wrap;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    /* phần bên trái */
+    
+    .product-left {
+        background: white;
+        width: 45%;
+        height: 550px;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+    }
+    
+    .product-left .product-share a {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    
+    .choice {
+        font-size: 18px;
+    }
+    
+    .choice input {
+        margin: 0px 20px 0px 1px;
+    }
+    /* hình ảnh  */
+    /* ảnh lớn */
+    
+    .img-product {
+        width: 90%;
+        height: 300px;
+    }
+    
+    .img-product img {
+        width: 300px;
+        height: 300px;
+        padding: 10px 50px;
+    }
+    /* ảnh nhỏ */
+    
+    .img-product-mini img {
+        width: 100px;
+        height: 105px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+    /* chổ chia sẻ và đã thích */
+    
+    .product-left .product-share {
+        display: flex;
+        font-size: 16px;
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    .product-left .product-share .share {
+        display: flex;
+    }
+    
+    .fa-heart {
+        color: red;
+    }
+    
+    .product-left .product-share .like {
+        border-left-color: gray;
+        border-left-style: solid;
+        border-left-width: 1px;
+        margin-left: 10px;
+        width: 180px;
+        padding-left: 10px;
+    }
+    
+    .camket span {
+        color: #545454;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    /* phần bên phải */
+    
+    .fa-star {
+        text-decoration-line: underline;
+        color: rgb(255, 153, 0);
+    }
+    /* sao, đánh giá, đã bán */
+    
+    .rate {
+        margin-left: 20px;
+        align-items: center;
+    }
+    
+    .rate-box {
+        margin-top: 20px;
+        font-size: 17px;
+        text-decoration-line: underline;
+        border: none;
+        width: 100%;
+        display: flex;
+    }
+    /* 2 cái giá */
+    
+    .product-price {
+        border: none;
+        width: 100%;
+        display: flex;
+        justify-content: wrap;
+    }
+    /* giá gốc */
+    /* gạch ngang giá */
+    
+    del {
+        text-decoration: line-through;
+    }
+    
+    .product-price .sale {
+        font-size: 1rem;
+        color: #929292;
+        margin-right: 20px;
+    }
+    
+    .product-right div {
+        line-height: 70px;
+    }
+    /* giá đã giảm */
+    
+    .product-price .price {
+        font-size: 1.5rem;
+        color: #ee4d2d;
+    }
+    /* số lượng */
+    
+    .product-count {
+        margin: 10px 0px;
+    }
+    
+    #move {
+        display: flex;
+    }
+    
+    #move .fa {
+        margin-right: 10px;
+    }
+    
+    #move .cl_move ul {
+        margin-top: -15px;
+        position: absolute;
+        margin-left: 20px;
+        width: 200px;
+        background-color: rgb(250, 247, 247);
+        box-shadow: 0px 0px 1px 0.7px rgb(183, 179, 179);
+        height: 180px;
+        overflow-y: scroll;
+        z-index: 10;
+        line-height: 25px;
+    }
+    
+    #move .cl_move a {
+        color: black
+    }
+    
+    #move .cl_move li {
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .product-count h3 {
+        margin-right: 10px;
+    }
+    
+    .product-count input {
+        font-size: 17px;
+        width: 50px;
+        height: 25px;
+    }
+    
+    .product-count .product-button {
+        margin-left: 20px;
+        width: 200px;
+        height: 35px;
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    
+    .product-count .product-button:hover {
+        background: rgb(199, 13, 13);
+        border: none;
+    }
+    /* product2 */
+    
+    .product-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #eeecec;
+        margin-top: 20px;
+    }
+    
+    .product-info {
+        border: 1px solid gray;
+        background: white;
+        width: 500px;
+        height: 430px;
+        text-align: center;
+    }
+    
+    .product-info h2 {
+        border: none;
+        background: rgba(245, 239, 239);
+    }
+    
+    .product-info2 h2 {
+        border: none;
+    }
+    
+    .product-info p {
+        padding: 20px;
+    }
+    
+    .product-info2 {
+        font-size: 16px;
+        background: white;
+        width: 500px;
+        height: 430px;
+    }
+    
+    .product-info2 li {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border: none;
+    }
+    
+    .product-body2 {
+        margin: 0px 0 30px 0;
+        width: 1000px;
+        height: auto;
+        background: white;
+        align-items: center;
+        display: flex;
+        justify-content: wrap;
+        position: relative;
+    }
+    /* scroll */
+    /* scoll-body */
+    
+    #scoll-body a {
+        font-size: 40px;
+        font-weight: bolder;
+        right: 20px;
+        position: fixed;
+        bottom: 50px;
+    }
+    /* footer */
+    /* sp -khac */
+    
+    #chuyentiep,
+    #chuyentiep1 {
+        position: absolute;
+        top: 0%;
+        cursor: pointer;
+        color: red;
+        font-size: 30px;
+    }
+    
+    #chuyentiep {
+        right: 10px;
+    }
+    
+    #chuyentiep1 {
+        display: none;
+    }
+    
+    #sp-khac {
+        width: 80%;
+        overflow: hidden;
+        position: relative;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0px auto;
+    }
+    
+    #sp-khac-flex {
+        width: 20004px;
+        height: 200px;
+        transition: 0.4s;
+        margin: 0px auto;
+    }
+    
+    #sp-khac ul {
+        margin: 20px 0px;
+    }
+    
+    #sp-khac li {
+        width: 150px;
+        float: left;
+        height: auto;
+        overflow: hidden;
+        background-color: azure;
+        margin-left: 33px;
+    }
+    
+    #sp-khac img {
+        width: 100%;
+        height: 80%;
+        transition: 0.5s;
+    }
+    
+    .fb-comments {
+        margin: 3%;
+    }
+    
+    .footer {
+        color: white;
+        width: 100%;
+        height: auto;
+        padding: 30px 165px;
+        justify-content: space-between;
+        background: #111;
+        display: flex;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    
+    .footer ul {
+        list-style-type: none;
+    }
+    
+    .footer a {
+        color: white;
+    }
+    
+    .footer a:hover {
+        background-color: red;
+        transition: 0.5s;
+    }
+    
+    .footer2 p {
+        font-size: 13px;
+        color: #c2baba;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+        background: #111;
+    }
+    
+    .line {
+        border: 1px solid rgb(204, 203, 203);
+    }
+    /* màu của mấy cái icon */
+    
+    .fa-instagram {
+        background: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 70%, #285aeb 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .fa-money-check-alt {
+        background: #aab8c2;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .fa-twitter {
+        background: #1da1f2;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .fa-facebook {
+        background: #3970fb;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    
+    .fa-youtube {
+        background: #ff0000;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .form input {
+        padding: 5px;
+    }
+    
+    .form button {
+        padding: 8px;
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    footer,
+    .footer2 {
+        width: 100%;
+        box-sizing: border-box;
+    }

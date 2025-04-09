@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <script src="https://kit.fontawesome.com/d9f0bcb2c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="register.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <form  name="dangky"onSubmit="return kiemtra()"
+    action="../home/trangchu.html">
+        <div class="card">
+            <div class="home">
+                <a href="../home/trangchu.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAw0lEQVRIie3SMUoDURSF4W9Egq2QOqRJKRZxC3ZZhZ27cAvZg10WkUIt06ZJqhBMHexEiM08GIdJfDPzhIBz4G8el/9yLo//lAEWOYPU8htscMh5xziV/B77gjzwgUlb+QM+K+SBLzw2EWd4OiEuM8VFrLyH5xrywAxXv8mvMW8gD7yhf0w+xLKFPLDCqCy/xTaBPLDDXXHBOqG82ERWcarDsRtG5ocz+ms1zWWN2XLbqKZ/3qBbcJ4LXiveXlrMdTmdb3++feVUDC6WAAAAAElFTkSuQmCC"
+                    /></a>
+            </div>
+            <h1>Register Form</h1>
+            <div class="name">
+                <input type="text" placeholder="UserName" id="name">
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Email" id="e">
+            </div>
+            <div class="pass">
+                <input type="password" placeholder="Password" id="pas">
+            </div>
+            <div  id="loi" class="bug">Mật khẩu yếu</div>
+            <div class="pass">
+                <input type="password" placeholder="Password Again" id="pas2">
+            </div>
+            <button type="submit">Register</button>
+            <p>member? <a href="login.html">Login</a></p>
+        </div>
+    </form>
+<script>
+    function kiemtra(){
+        var e=document.getElementById("e").value;
+        var name=document.getElementById("name").value;
+        var new1=document.getElementById("pas").value;
+        var new2=document.getElementById("pas2").value;
+        if(e.length==0 ||name.length==0||new1.length==0||new2.length==0 ){
+            alert("Bạn chưa nhập đủ");
+            return false;
+        }
+        re=/\w+@\w+\.\w+/;
+        if (e==" ")
+        {
+            alert("Bạn chưa nhập email");
+            return false
+            }
+        else if(re.test(e)==false){
+                alert("Email không đúng định dạng!"); 
+                return false
+        }
+        if(new1.length<5){
+            document.getElementById("loi").style.visibility="visible";
+            return false;
+
+        }
+        if( new1!=  new2){
+            alert("Nhập lại mật khẩu");
+            return false;
+        }
+
+
+    }
+    </script>
+</body>
+
+</html>

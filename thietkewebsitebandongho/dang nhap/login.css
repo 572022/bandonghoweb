@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    color: black;
+    font-size: 15px;
+}
+
+.card {
+    border: none;
+    background: white;
+    width: 390px;
+    height: 480px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.name input {
+    margin: 70px 0 0 0;
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+}
+
+.pass input {
+    margin: 50px 0 0 0;
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+}
+
+.card button {
+    margin: 45px 0 70px 0;
+    color: white;
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: black;
+}
+
+.card button:hover {
+    background: rgb(81, 108, 240);
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: red;
+}
+
+.card h1 {
+    margin-left: 35px;
+}
+
+
+/* nut home */
+
+.home img {
+    float: right;
+    padding: 5px;
+}

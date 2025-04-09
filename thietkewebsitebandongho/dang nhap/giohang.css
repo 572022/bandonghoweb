@@ -1,0 +1,220 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+/* logo  */
+:root {
+    --main_color: black;
+    --color-menu: #fff;
+}
+
+#logo {
+    display: flex;
+}
+
+#thongbao {
+    color: rgba(116, 114, 114, 0.753);
+    cursor: pointer;
+}
+
+#logo-left {
+    width: 24%;
+    height: 100px;
+    padding-left: 10px;
+}
+
+#logo-left img {
+    width: 100%;
+    height: 100px;
+}
+
+#search {
+    width: 85%;
+    height: 100px;
+    display: flex;
+}
+
+.timkiem {
+    line-height: 100px;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.timkiem input {
+    padding: 10px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.timkiem-right {
+    margin-right: 30px;
+}
+
+.timkiem-right table {
+    text-align: center;
+}
+
+.timkiem-right td a,
+.timkiem-right td .fa {
+    color: rgba(116, 114, 114, 0.753);
+    padding: 10px;
+    text-decoration: none;
+}
+
+#menu {
+    width: 100%;
+    height: 40px;
+    position: sticky;
+    top: -1px;
+    background-color: var(--main_color);
+    z-index: 1000;
+}
+
+#anh_watch {
+    width: 30%;
+    margin-left: 10px;
+}
+
+#anh_watch img {
+    width: 100%;
+    height: 108px;
+}
+
+#menu>ul {
+    display: flex;
+    color: #fff;
+    height: 40px;
+}
+
+#menu ul li {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    background-color: black;
+    border: 1px solid rgb(48, 47, 47);
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu ul.cl_menu1 >li:nth-child(1) {
+    background-color: red;
+}
+
+ul.menu2 {
+    position: absolute;
+    width: 130px;
+    background-color: var(--main-color);
+    top: 39px;
+    left: 0px;
+    display: none;
+}
+
+/*============== menu ============== */
+ul.menu2 li {
+    border: 1px solid rgb(48, 47, 47);
+}
+
+#menu ul li:hover ul.menu2 {
+    display: block;
+}
+
+#menu li:hover {
+    background-color: rgb(34, 35, 36);
+}
+/* wrap */
+#wrap{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 50px;
+
+}
+ #anhgiohang .fa{
+   font-size: 100px; 
+   margin: 20px;
+   color:rgb(236, 13, 13);
+   
+}
+button {
+    background-color: red;
+    border: none;
+   color: #fff;
+   padding: 10px;
+   font-size: 17px;
+   border-radius: 10px;
+   margin: 20px;
+}
+
+#icon-fb{
+    width: 100%; 
+    height:50px;
+   line-height: 50px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    margin:35px auto;
+    width: 90%;
+
+    box-sizing: border-box;
+}
+#icon-fb .fa{
+    color: rgba(146, 140, 140, 0.616);
+    padding-right: 20px;
+    font-size: 28px;
+}
+#icon-fb .fa:hover{
+    color:black;
+}
+/* footer */
+
+.footer {
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    justify-content: space-between;
+    background: #111;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    background-color: red;
+    transition: 0.5s;
+}
+
+.footer2 p {
+    font-size: 16px;
+    color: #c2baba;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #111;
+}
+
+.line {
+    border: 1px solid rgb(204, 203, 203);
+}
+.form input{
+    padding: 5px;
+}
+.form .button{
+    margin: 0px;
+    padding: 5px;
+    border-radius: 5px;
+}

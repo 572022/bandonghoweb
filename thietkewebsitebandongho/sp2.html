@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- InstanceBegin template="../try/Templates/Templates/sp.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Mua sắm trực tuyến</title>
+    <!-- InstanceEndEditable -->
+    <script src="https://kit.fontawesome.com/d9f0bcb2c0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="/anh/favicon.jpg">
+    <!-- InstanceBeginEditable name="EditRegion4" -->
+    <link rel="stylesheet" href="sp.css">
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0" nonce="G5ZrWFrp">
+    </script>
+    <div id="logo">
+        <div id="logo-left">
+
+            <img src="anh/logo.jpg" alt="ảnh logo">
+
+        </div>
+        <div id="search">
+            <div class="timkiem">
+                <input type="search" placeholder="Tìm tên sản phẩm...">
+            </div>
+
+            <div class="timkiem-right">
+
+                <table border="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <i class="fa fa-user-plus"></i>
+
+                        </td>
+                        <td>
+                            <i class="fa fa-bell" id="change-color"></i>
+                        </td>
+                        <td>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td><a href="dang nhap/login.html">Đăng nhập</a></td>
+                        <td>
+                            <div id="thongbao" onclick="thongbao1()">Thông báo </div>
+                        </td>
+                        <td><a href=""> Đơn hàng</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- InstanceBeginEditable name="EditRegion3" -->
+    <div id="menu">
+        <ul>
+            <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+            <li> <a href="home/trangchu.html">Trang chủ</a> </li>
+            <li> <a href=""> Sản phẩm </a>
+                <ul class="menu2">
+                    <li>
+                        <a href=""></a><a href="home/sp_casio.html">Casio</a></li>
+                    <li><a href="home/sp_rolex.html">Rolex</a></li>
+                    <li><a href="home/sp_smart.html">Smart</a></li>
+                </ul>
+            </li>
+            <li> <a href="gioi thieu.html">Giới thiệu</a> </li>
+            <li> <a href="dang nhap/giohang.html">Giỏ hàng</a> </li>
+        </ul>
+    </div>
+    <!-- product -->
+    <div class="product">
+        <div class="product-body">
+            <div class="product-left">
+                <div class="img-product"> <img src="anh/casio1.jpg" id="anh"> </div>
+                <div class="img-product-mini"> <img src="anh/casio1.jpg" onclick="hover_img1()"> <img src="anh/casio1-1.jpg" onclick="hover_img2()"> <img src="anh/casio1-2.jpg" onclick="hover_img3()"> </div>
+                <div class="product-share">
+                    <div class="share">
+                        <p>Chia sẻ:</p>
+                        <a href=""><i class="fa fa-facebook"></i></a> <a href=""><i class="fa fa-twitter"></i></a> <a href=""><i class="fa fa-instagram"></i></a> <a href=""><i class="fa fa-youtube"></i></a> </div>
+                    <div class="like"> <i class="fa fa-heart"></i> 999k đã thích </div>
+                </div>
+            </div>
+            <div class="product-right">
+                <h2>CASIO 43.5 mm Nam AE-1000WD-1AVDF</h2>
+                <div class="rate-box">
+                    <div class="start"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 5 </div>
+                    <div class="rate">550k đánh giá</div>
+                    <div class="rate">999k+ đã bán</div>
+                </div>
+                <div>
+                    <div class="product-price"> <sup class="sale"><del>1.234.000đ</del></sup>
+                        <p class="price">617.000đ</p>
+                    </div>
+                    <div class="choice"> Màu sắc:
+                        <label for="den">Đen
+                <input type="checkbox" value="den" id="den">
+              </label>
+                        <label for="trang"> Trắng
+                <input type="checkbox" value="trang" id="trang">
+              </label>
+                        <label for="xanh">Xanh
+                <input type="checkbox" value="xanh" id="xanh">
+              </label>
+                    </div>
+                    <div id="move">
+                        <details>
+                            <summary>Vận chuyển đến</summary>
+                            <div class="cl_move">
+                                <ul>
+                                    <li><a href="">An Giang</a></li>
+                                    <li><a href="">Vũng Tàu</a></li>
+                                    <li><a href="">Bình Dương </a></li>
+                                    <li><a href="">Bình Phước</a></li>
+                                    <li><a href="">Bình Thuận</a></li>
+                                    <li><a href="">Bạc Liêu</a></li>
+                                    <li><a href="">Bắc Giang</a></li>
+                                    <li><a href="">Bắc Cạn</a></li>
+                                    <li><a href="">Bến Tre</a></li>
+                                    <li><a href="">Cần Thơ</a></li>
+                                    <li><a href="">Cà Mau</a></li>
+                                    <li><a href="">Hà Nội</a></li>
+                                    <li><a href="">TP-HCM</a></li>
+                                    <li><a href="">Thanh Hóa</a></li>
+                                    <li><a href="">Thái Bình</a></li>
+                                    <li><a href="">Thái Nguyên</a></li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="product-count">
+                        <div> <span>số lượng:
+                <input type="number" class="count" name="tentacles" min="1" max="100">
+                <a href="dang nhap/login.html">
+                  <button type="submit" class="product-button">Mua Ngay</button>
+                </a> </span></div>
+                        <span> <br>
+              </span></div>
+                    <span>
+              <div class="camket">
+                <hr>
+                <span>MTT64 </span> bảo đảm 3 ngày hoàn tiền/ trả hàng </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <span>
+    <div class="product-2">
+      <div class="product-body2">
+        <div class="product-info">
+          <h2>MÔ TẢ</h2>
+          <p>Từ G-SHOCK, thương hiệu đồng hồ không ngừng đổi mới để theo đuổi độ bền, cho ra mắt mẫu đồng hồ kết hợp màu xanh lam thời thượng cùng nền đen đặc trưng thương hiệu. Nguyên thân đồng hồ được thiết kế với tone màu đen không quá bóng
+            rất tinh tế. Sắc xanh lam phủ lên các bộ phận gờ, mặt số và các chi tiết của kim giờ và kim phút, mang đến một thiết kế sành điệu và vô cùng mạnh mẽ. Hơn nữa, mặt số sở hữu họa tiết ngụy trang màu xanh lam, được thiết kế vô cùng
+            tỉ mỉ và chi tiết. Mẫu đồng hồ màu sành điệu kết hợp cực kỳ ăn ý với thời trang thường ngày.</p>
+        </div>
+        <div class="product-info2">
+          <h3>THÔNG SỐ KĨ THUẬT</h3>
+          <ul>
+            <li> <b>Loại máy:</b>
+              <p>Quartz</p>
+            </li>
+            <li> <b>Đường kính mặt:</b>
+              <p>51,2mm</p>
+            </li>
+            <li> <b>Chất liệu mặt kính:</b>
+              <p>Mặt kính khoáng</p>
+            </li>
+            <li> <b>Chất liệu khung viền:</b>
+              <p>Nhựa</p>
+            </li>
+            <li> <b>Độ dày mặt:</b>
+              <p>16,9mm</p>
+            </li>
+            <li> <b>Chất liệu dây:</b>
+              <p>Dây đeo bằng nhựa</p>
+            </li>
+            <li> <b>Độ rộng dây:</b>
+              <p>55mm</p>
+            </li>
+            <li> <b>Chống nước:</b>
+              <p>20ATM (200 mét)</p>
+            </li>
+            <li> <b>Nguồn năng lượng:</b>
+              <p>Pin</p>
+            </li>
+            <li> <b>Thời gian sử dụng pin:</b>
+              <p>Xấp xỉ 2 năm với pin CR1220</p>
+            </li>
+            <li> <b>Thương hiệu:</b>
+              <p>Casio</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="sp-khac">
+      <div id="sp-khac-flex">
+        <h3>Có thể bạn sẽ thích</h3>
+        <ul>
+          <li> <a href="#"> <img src="anh/rolex1.jpg">
+            <div class="spbanchay-tt"> Rolex </div>
+          </a> </li>
+          <li> <a href="#"> <img src="anh/anh5.jpg">
+            <div class="spbanchay-tt"> Đồng hồ ABC </div>
+          </a> </li>
+          <li> <a href="#"> <img src="anh/casio1.jpg">
+            <div class="spbanchay-tt"> Đồng hồ Casio </div>
+          </a> </li>
+          <li> <a href="#"> <img src="anh/rolex8.jpg">
+            <div class="spbanchay-tt"> Đồng hồ Citezen  </div>
+          </a> </li>
+          <li> <a href="#"> <img src="anh/anh6.jpg">
+            <div class="spbanchay-tt"> Đồng hồ  </div>
+          </a> </li>
+          <li> <a href="#"> <img src="anh/anh4_rado.jpg">
+            <div class="spbanchay-tt"> Đồng hồ Rando </div>
+          </a> </li>
+          <li> <a href="#"> <img src="anh/anh1_senko_home.webp">
+            <div class="spbanchay-tt"> Đồng hồ Senko</div>
+          </a> </li>
+          <li> <a href="#"> <img src="anh/smart1.jpg">
+            <div class="spbanchay-tt"> Đồng hồ G-SHOCK  </div>
+          </a> </li>
+        </ul>
+      </div>
+      <div id="chuyentiep" onclick="chuyen()"> &rsaquo;&rsaquo; </div>
+      <div id="chuyentiep1" onclick="chuyen1()"> &lsaquo;&lsaquo; </div>
+    </div>
+    <!-- scoll body -->
+    <div id="scoll-body"> <a href="#"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a> </div>
+    <div class="line">
+      <p></p>
+    </div>
+    <div class="fb-comments" data-href="https://shoppe.vn" data-width="600" data-numposts="3"></div>
+    </span>
+    <!-- InstanceEndEditable -->
+    <!-- footer -->
+
+    <footer class='footer'>
+        <div class="contact">
+            <h2>Thông Tin Liên Hệ</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker"></i></span>
+                    <span>Trần Văn Ơn, Thủ Dầu Một</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone"></i></span>
+                    <p><a href="#">+84 123 456 789</a>
+                        <br />
+                        <a href="#">+84 987 654 321</a>
+                    </p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <p><a href="#">diachiemail@gmail.com</a></p>
+                </li>
+                <li>
+                    <!-- placeholder Chỉ định một gợi ý gắn mà mô tả giá trị mong đợi của một phần tử <input> -->
+                    <form class="form">
+                        <input type="email" class="form" placeholder="Đăng Ký Subscribe Email" />
+                        <button type="button" class="button">Gửi</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <ul class="about">
+            <span>
+                    <h2>Đường Dẫn</h2>
+                </span>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+        <ul class="social-icon">
+            <span>
+                    <h2>Tham Khảo</h2>
+                </span>
+            <li><a href=""><i class="fa fa-facebook"></i> FACEBOOK</a></li>
+            <li><a href=""><i class="fa fa-twitter"></i> TWITTER</a></li>
+            <li><a href=""><i class="fa fa-instagram"></i> INSTAGRAM</a></li>
+            <li><a href=""><i class="fa fa-youtube"></i> YOUTUBE</a></li>
+        </ul>
+    </footer>
+    <div class="line">
+        <p></p>
+    </div>
+    <div class="footer2">
+        <center>
+            <p>MTT64 - trang web lớn nhất thế giới về đồng hồ và hàng hiệu. Chúng tôi là đại lý độc lập chuyên phân phối sản phẩm, chịu trách nhiệm về mặt vận chuyển, đổi trả và các vấn đề liên quan khác <br> Copyright © 2022, All Rights Reserved</p>
+        </center>
+    </div>
+
+</body>
+<script>
+    function thongbao1() {
+        var a = document.getElementById("thongbao");
+
+        if (a.innerHTML != "Thông báo") {
+            a.innerHTML = "Thông báo";
+            document.getElementById("change-color").style.color = "#747272c0";
+            a.style.color = "#747272c0";
+        } else {
+            a.innerHTML = "Đã thông báo";
+            document.getElementById("change-color").style.color = "red";
+            a.style.color = "red";
+
+        }
+
+    }
+
+    function hover_img1() {
+
+        document.getElementById("anh").src = "anh/casio1.jpg";
+    }
+
+    function hover_img2() {
+
+        document.getElementById("anh").src = "anh/casio1-1.jpg";
+    }
+
+    function hover_img3() {
+
+        document.getElementById("anh").src = "anh/casio1-2.jpg";
+
+    }
+
+    function chuyen() {
+        document.getElementById("sp-khac-flex").style.marginLeft = -960 + 'px';
+        document.getElementById("chuyentiep1").style.display = "block";
+        document.getElementById("chuyentiep").style.display = "none";
+    }
+
+    function chuyen1() {
+        document.getElementById("sp-khac-flex").style.marginLeft = 0 + 'px';
+        document.getElementById("chuyentiep1").style.display = "none";
+        document.getElementById("chuyentiep").style.display = "block";
+    }
+</script>
+
+<!-- InstanceEnd -->
+
+</html>

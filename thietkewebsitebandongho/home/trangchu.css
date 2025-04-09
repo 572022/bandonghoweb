@@ -1,0 +1,667 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#container{
+    width: 100%;
+    height: auto;
+}
+:root {
+    --main_color: black;
+    --color-menu: #fff;
+}
+
+#logo {
+    display: flex;
+}
+
+#thongbao {
+    color: rgba(116, 114, 114, 0.753);
+    cursor: pointer;
+}
+
+#logo-left {
+    width: 24%;
+    height: 100px;
+    padding-left: 10px;
+}
+
+#logo-left img {
+    width: 100%;
+    height: 100px;
+}
+
+#search {
+    width: 85%;
+    height: 100px;
+    display: flex;
+}
+
+.timkiem {
+    line-height: 100px;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.timkiem input {
+    padding: 10px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.timkiem-right {
+    margin-right: 30px;
+}
+
+.timkiem-right table {
+    text-align: center;
+}
+
+.timkiem-right td a,
+.timkiem-right td .fa {
+    color: rgba(116, 114, 114, 0.753);
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/* -------------nd */
+
+#wrap {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+#icon_sp h2{
+   text-align: center;
+ color: #fff;
+   
+}
+#icon_sp{
+    background-color: #434f6c;
+    padding: 30px; margin: 0px;
+}
+#ul_icon_sp{
+    display: flex;
+    justify-content: center;
+   
+}
+#ul_icon_sp li{
+    list-style: none;
+    padding: 20px;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+
+}
+#ul_icon_sp .fa{
+    color:#fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+  
+}
+
+#spbanchay {
+    width: 100%;
+    margin: 50px auto;
+    outline: 2px solid #113366;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #ded9d57e;
+    background-size: cover;
+    background-position-y: -50px;
+}
+
+#spbanchay ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+  
+}
+
+#spbanchay li {
+    width: 15%;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+    background-color: azure;
+    
+}
+
+#spbanchay img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#spbanchay li img:hover {
+    transform: scale(1.1);
+    filter: grayscale(50%);
+}
+
+.banchay_nd {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    color: black;
+    font-weight: bolder;
+    background-color: yellow;
+    width: 50%;
+    height: 20px;
+    transform: translateY(-100%);
+    transition: .5s;
+    text-align: center;
+    padding: 5px;
+}
+
+#spbanchay li:hover .banchay_nd {
+    transform: translateY(0%);
+}
+
+.spbanchay-tt {
+    position: absolute;
+    bottom: 5px;
+    color:yellow;
+}
+
+
+/* menu */
+
+#menu {
+    width: 100%;
+    height: 36px;
+    position: sticky;
+    top: -1px;
+    background-color: var(--main_color);
+    z-index: 1000;
+}
+
+#anh_watch {
+    width: 30%;
+    margin-left: 10px;
+}
+
+#anh_watch img {
+    width: 100%;
+    height: 108px;
+}
+
+#menu>ul {
+    display: flex;
+    color: #fff;
+    height: 36px;
+    font-size: 14px;
+}
+
+#menu ul li {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    background-color: black;
+    border: 1px solid rgb(48, 47, 47);
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu ul.ul_menu1>li:nth-child(1) {
+    background-color: red;
+}
+
+ul.menu2 {
+    position: absolute;
+    width: 130px;
+    background-color: var(--main-color);
+    top: 35px;
+    left: 0px;
+    display: none;
+}
+
+ul.menu2 li {
+    border: 1px solid rgb(48, 47, 47);
+}
+
+#menu ul li:hover ul.menu2 {
+    display: block;
+}
+
+#menu li:hover {
+    background-color: rgb(34, 35, 36);
+}
+
+
+/* ----silde */
+
+#slide-main {
+    width: 70%;
+    height: 220px;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+
+.input_img .a1,
+.input_img .a2,
+.input_img .a3,
+.input_img .a4,
+.input_img .a5,
+.input_img .a6,
+.input_img .a7 {
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-color: yellow;
+    width: 820px;
+    height: 220px;
+    background-position-y: -20px;
+}
+
+.input_img .a1 {
+    background-image: url(../anh/anh-Casio.webp);
+}
+
+.input_img .a2 {
+    background-image: url(../anh/senko.jpg);
+    background-position-y: -40px;
+}
+
+.input_img .a3 {
+    background-image: url(../anh/dh_sheen.webp);
+}
+
+.input_img .a4 {
+    background-image: url(../anh/dh_dientu.webp);
+}
+
+.input_img .a5 {
+    background-image: url(../anh/treo.jpg);
+    background-position-y: -100px;
+}
+
+.input_img .a6 {
+    background-image: url(../anh/dhtm.webp);
+    background-position-y: -180px;
+}
+
+.input_img .a7 {
+    background-image: url(https://reviews-top5.com/wp-content/uploads/2020/09/top-5-dong-ho-thong-minh-cho-ca-nam-va-nu-1.jpeg);
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+.input_img {
+    display: flex;
+    width: 20000px;
+}
+
+.label .fa {
+    color: rgba(150, 141, 141, 0.719);
+    margin-left: 5px;
+}
+
+.label .fa:hover {
+    color: rgba(48, 47, 47, 0.87)
+}
+
+.label {
+    position: absolute;
+    top: 190px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.input_img input {
+    display: none;
+}
+
+#a1:checked~.s1 {
+    margin-left: 0px;
+}
+
+#a2:checked~.s1 {
+    margin-left: -820px;
+}
+
+#a3:checked~.s1 {
+    margin-left: -1640px;
+}
+
+#a4:checked~.s1 {
+    margin-left: -2460px;
+}
+
+#a5:checked~.s1 {
+    margin-left: -3280px;
+}
+
+#a6:checked~.s1 {
+    margin-left: -4100x;
+}
+
+#a7:checked~.s1 {
+    margin-left: -4920px;
+}
+
+.h3 {
+    text-align: center;
+    color: red;
+}
+/* nd sp */
+
+#list-sp_clock {
+    width: 18%;
+}
+
+#muc-sp {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#list-sp1 {
+    height: 230px;
+    overflow-y: scroll;
+    line-height: 30px;
+    border: 0.2px solid;
+}
+
+#list-sp1 li:hover {
+    background-color: #ccc6c6;
+}
+
+
+/* nd sp home */
+
+.sp-img img {
+    width: 100%;
+    height: 170px;
+}
+
+.sp-nd_sale {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.sp-nd_sale sup {
+    text-decoration: line-through;
+    color: rgb(141, 138, 138);
+}
+
+.sp-nd_sale span {
+    color: red;
+}
+
+.sp-nd-daban {
+    padding: 0px 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+/* scroll */
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 65, 65);
+    border-radius: 5px;
+}
+/*  like */
+#select{
+    width: 190px;
+    height: auto;
+   
+    
+    padding-bottom: 5px;
+   box-shadow: 0px 0px 2px 1px rgb(156, 156, 156);
+    padding: 7px;
+    margin: 20px 2px;
+}
+#select img{
+    width: 190px; height: 240px;
+}
+#select .fa{
+    margin: 0px 10px;
+    padding-top: 10px;
+    color:gray;
+}
+#select #a1{
+    color:gray;
+    
+    
+}
+#select	#a2{
+color: gray;
+}
+#select #a2:hover,#select  #a1:hover{
+transform: scale(1.2);
+}	
+#select .nd{
+    display: flex;
+    
+}
+#select button{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color:#fff;
+    margin: 5px 0px;
+}
+#select .p1{
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#select .p1 span{
+    color: blue;
+}
+#select .p2{
+    font-size: 12px;color:rgb(143, 39, 39)
+}
+#list-sp button {
+    border: 1px solid;
+    background-color: var(--main_color);
+    color: var(--color-menu);
+    padding: 7px 10px;
+    font-size: 17px;
+    border: none;
+    width: 100%;
+}
+
+#nd-sp {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 80%;
+}
+
+.sp1 {
+    width: 90%;
+    height: auto;
+    background-color: #fff;
+    margin-bottom: 40px;
+    /* box-shadow: 0px 0px 2px 0.1px rgb(51, 49, 49); */
+    position: relative;
+    padding: 5px;
+}
+
+.sp1 button {
+    padding: 5px;
+    background-color: red;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#hover {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    top: 96%;
+}
+
+#nd-sp a {
+    text-decoration: none;
+    color: black;
+    width: 21%;
+}
+
+.sp1:hover {
+    border: 1.3px solid red;
+    user-select: none;
+}
+
+.sp1:hover #hover {
+    display: block;
+}
+
+#list-sp li {
+    list-style: none;
+    padding: 7px;
+    border: 1px solid rgb(100, 97, 97);
+}
+
+#list-sp li a {
+    color: black;
+}
+
+#clock {
+    width: 100%;
+    height: 200px;
+    border: 1px solid;
+    background-color: red;
+}
+
+
+/* scoll-body */
+
+#scoll-body a {
+    font-size: 40px;
+    font-weight: bolder;
+    right: 20px;
+    position: fixed;
+    bottom: 50px;
+}
+
+/* giới thiệu */
+#gioithieu{
+    display: flex;
+}
+#gioithieu #nd{
+    width: 40%;
+    height: 250px;
+    background-color: #113366;
+
+}
+#gioithieu #anh{
+    width: 60%;
+    height: 250px;
+    background-color: #186611;
+}
+/* footer */
+
+.footer {
+    
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 25px 150px;
+    justify-content: space-between;
+    background: #111;
+    display: flex;
+    box-sizing: border-box;
+    font-size: 16px;
+    transform: tr;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    background-color: red;
+    transition: 0.5s;
+}
+
+.footer2 p {
+    font-size: 16px;
+    color: #c2baba;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #111;
+}
+
+
+/* màu của mấy cái icon */
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 70%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.fa-money-check-alt {
+    background: #AAB8C2;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.fa-twitter {
+    background: #1DA1F2;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.fa-facebook {
+    background: #3970fb;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-youtube {
+    background: #FF0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.form input {
+    padding: 5px;
+}
+
+.form button {
+    padding: 8px;
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+footer,
+.footer2 {
+    width: 100%;
+    box-sizing: border-box;
+}

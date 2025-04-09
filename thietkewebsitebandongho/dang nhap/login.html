@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+
+<body>
+    <form  
+    name="dangky"onSubmit="return kiemtra()"action="../home/trangchu.html"> 
+
+        <div class="card">
+            <div class="home">
+                <a href="../home/trangchu.html">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAw0lEQVRIie3SMUoDURSF4W9Egq2QOqRJKRZxC3ZZhZ27cAvZg10WkUIt06ZJqhBMHexEiM08GIdJfDPzhIBz4G8el/9yLo//lAEWOYPU8htscMh5xziV/B77gjzwgUlb+QM+K+SBLzw2EWd4OiEuM8VFrLyH5xrywAxXv8mvMW8gD7yhf0w+xLKFPLDCqCy/xTaBPLDDXXHBOqG82ERWcarDsRtG5ocz+ms1zWWN2XLbqKZ/3qBbcJ4LXiveXlrMdTmdb3++feVUDC6WAAAAAElFTkSuQmCC"/>
+            </a>
+            </div>
+            <h1>Login Form</h1>
+            <div class="name">
+                <input type="text" placeholder="UserName"
+                 name="username" id="us">
+                <small></small>
+            </div>
+            <div class="pass">
+                <input type="password" placeholder="Password"
+                name="pas" id="pas">
+                <small></small>
+            </div>
+            <button type="submit" >Login</button>
+            <p>Not member? <a href="register.html">register</a></p>
+            <p>Forgot password? <a href="lostpassword.html">recover</a></p>
+        </div>
+    </form>
+    <script>
+        function kiemtra(){
+          var us=document.getElementById("us").value;
+          var pa=document.getElementById("pas").value;
+       if(us.length==0 ||  pa.length==0){
+           alert("Bạn chưa nhập đủ");
+        document.getElementById("us").focus();
+           return false;
+       }
+        else{
+           alert("Bạn đã đăng kí thành công!");
+       }
+     
+       
+        }
+    </script>
+</body>
+
+</html>
